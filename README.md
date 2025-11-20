@@ -16,7 +16,7 @@ Users can add and delete tasks using a minimal and user-friendly interface.
 - JavaScript  
 
 ## Live Demo
-(https:Avnisharma15.github.io/To-Do-List---Task-Manager-App)
+(https://Avnisharma15.github.io/To-Do-List---Task-Manager-App)
 
 ## Author
 Created by **Avni Sharma** ✨
