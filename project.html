@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body {
+            background-color: #dfdcdc;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            /* background-color: darkgrey; */
+        }
+        .input-container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            padding: 20px;
+        }
+        .input-container input {
+            border: none;
+            /* outline: none; */
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .input-container input[type="text"] {
+            width: 70%;
+        }
+        .input-container input[type="button"]{
+            color: white;
+            font-weight: 800px;
+            margin-left: 2px;
+            cursor: grabbing;
+            background-color: rgb(20, 120, 131);
+        }
+        .input-container input[type="button"]:hover{
+            background-color: rgb(12, 60, 65);
+        }
+        ul{
+            width: 100%;
+            max-width: 420px;
+        }
+        ul li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none; 
+            cursor: grab;
+            border-radius: 5px;
+            padding: 3px 5px;
+            margin-block-end: 5px;
+            border: 0.5px solid rgb(153, 151, 151);
+        }
+        ul li:hover{
+            background-color: rgb(231, 228, 228);
+        }
+        ul li p{
+            flex-grow: 1;
+            padding: 2px;
+        }
+        .btn{
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            outline: none;
+            margin: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: grabbing;
+            background-color: rgb(20, 120, 131);
+        }
+        .btn:hover{
+            background-color: rgb(12, 60, 65);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h1>ToDo List</h1>
+            <input id="inputBox" type="text" placeholder="Enter Your Task">
+            <input id="addbtn" type="button" value="Add Task">
+        </div>
+        <ul id="todolist" class="todolist">
+            <!-- <li>Task1</li>
+            <li>Task2</li>
+            <li>Task3</li> -->
+        </ul>
+    </div>
+    <script src="proj.js"></script>
+</body>
+</html>
